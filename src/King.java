@@ -27,8 +27,6 @@ public class King extends ChessPiece {
 
     public boolean isUnderAttack(ChessBoard boardObj, int line, int column) {
         boolean r = false;
-        String s = this.getSymbol();
-        String c = this.getColor();
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 ChessPiece hu = boardObj.board[i][j];
